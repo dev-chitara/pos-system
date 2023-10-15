@@ -5,6 +5,7 @@ import uuid
 PATH = "/home/dev/workspace/projects/pos-system/db/customers.csv"
 FIELDNAMES = ["id", "name", "contact_number"]
 
+
 class Customer:
     def __init__(self, name, contact_number):
         self.id = uuid.uuid4()
