@@ -7,12 +7,14 @@ FIELDNAMES = []
 
 
 class Order:
-    def __init__(self, customer_id, sold_product, total_order_amount, payment): 
+    def __init__(self, customer_id, sold_product, payment): 
         self.id = uuid.uuid4()
         self.date = datetime.now()
         self.customer_id = customer_id
         self.sold_product = sold_product
-        self.total_order_amount = total_order_amount
+        self.total_order_amount = 0
         self.payment = payment
 
-        
+
+
+    
