@@ -25,8 +25,8 @@ class Order:
         self.sold_product["sold_quanity"] = sold_quanity
         product_dict = get_product(self.sold_product.get(product_id))
         self.sold_product["total_amount"] = product_dict["price"]*self.sold_product.get(sold_quanity)
-
-
+    
+    
 
 
 
