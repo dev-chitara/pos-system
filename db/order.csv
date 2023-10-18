@@ -1,1 +1,2 @@
-
+id,date,customer_id,sold_product,product_id,total_order_amount,payment_type
+a71f6326-1405-4e89-afb2-52de1482a3aa,2023-10-18 18:16:12.124128,fbac7c1f-9712-4867-a6e9-9e180228e5ac,"{'product_id': '5681e482-51e7-4f37-84bb-7e6de1888d0a', 'sold_quanity': 4, 'total_amount': 80}",5681e482-51e7-4f37-84bb-7e6de1888d0a,80,UPI

@@ -28,7 +28,6 @@ class Order:
 
     def set_total_order_amonut(self):
         self.total_order_amount = self.sold_product["total_amount"]
-        # return self.total_order_amount
 
 
     def get_order_details(self):
