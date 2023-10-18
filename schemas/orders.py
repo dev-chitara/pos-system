@@ -2,7 +2,7 @@ import csv
 import uuid
 from datetime import datetime 
 from inventory_management_system.schemas.products import get_product
-
+from pos_system.schemas.customers import get_customer
 
 PATH = "./pos_system/db/order.csv"
 FIELDNAMES = ["id", "date", "customer_id", "sold_product", "product_id", "total_order_amount", "payment_type"]
@@ -64,8 +64,22 @@ def get_order(id):
                 return item
 
 
-def generating_receipts():
-    pass
+def generating_receipts(id):
+    order_dict = get_order(id)
+    customer_name = get_customer(order_dict["customer_id"])["name"]
+    product_name = get_product(order_dict["product_id"])["name"]
+    product_price = get_product(order_dict["product_id"])["price"]
+    # product_quantity = order_dict["sold_product"]["sold_quanity"]
+    total_order_amount = order_dict["total_order_amount"]
+    print(f"Customer ID is :{order_dict['customer_id']}")
+    print(f"Customer Name is :{customer_name}")
+    print(f"Order Date is :{order_dict['date']}")
+    print(f"Product Name is :{product_name}")
+    print(f"Product Price is :{product_price}")
+    # print(f"Product Quanity is :{product_quantity}")
+    print(f"Total Order Amount is :{total_order_amount}")
+
+    
 
 
 

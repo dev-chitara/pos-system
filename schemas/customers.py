@@ -2,7 +2,7 @@ import csv
 import uuid
 
 
-PATH = "/home/dev/workspace/projects/pos-system/db/customers.csv"
+PATH = "./pos_system/db/customers.csv"
 FIELDNAMES = ["id", "name", "contact_number"]
 
 

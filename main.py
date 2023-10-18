@@ -1,5 +1,5 @@
 from pos_system.schemas.customers import get_customers, create_customers, get_customer, update_customer, delete_customer
-from pos_system.schemas.orders import get_orders,create_order,get_order
+from pos_system.schemas.orders import get_orders,create_order,get_order,generating_receipts
 
 # create_customers("Harshit", 9882686578)
 # create_customers("Harsh", 7612576893)
@@ -20,5 +20,6 @@ from pos_system.schemas.orders import get_orders,create_order,get_order
 
 
 def main():
-    create_order("fbac7c1f-9712-4867-a6e9-9e180228e5ac", "5681e482-51e7-4f37-84bb-7e6de1888d0a", "UPI", 4) 
-    create_order("3421611e-ebbd-42db-9cd2-a96c9c602ae3", "b1524357-13c7-47cb-981f-74c62ddb5878", "Credit Card", 10)
+    # create_order("fbac7c1f-9712-4867-a6e9-9e180228e5ac", "5681e482-51e7-4f37-84bb-7e6de1888d0a", "UPI", 4) 
+    # create_order("3421611e-ebbd-42db-9cd2-a96c9c602ae3", "b1524357-13c7-47cb-981f-74c62ddb5878", "Credit Card", 10)
+    generating_receipts("6f7a5b70-8085-48d8-8080-27320461bff0")
