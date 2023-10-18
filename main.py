@@ -17,4 +17,4 @@ from schemas.order import get_orders,create_order,get_order
 
 # print(delete_customer("1827c35e-6581-48e7-b4f7-ca821e1689b5"))
 
-create_customers("fbac7c1f-9712-4867-a6e9-9e180228e5ac", "5681e482-51e7-4f37-84bb-7e6de1888d0a")
+create_order("fbac7c1f-9712-4867-a6e9-9e180228e5ac", "5681e482-51e7-4f37-84bb-7e6de1888d0a") 

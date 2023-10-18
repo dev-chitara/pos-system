@@ -3,6 +3,7 @@ import uuid
 from datetime import datetime 
 from inventory_management_system.schemas.products import get_product
 
+
 PATH = "/home/dev/workspace/projects/pos-system/db/order.csv"
 FIELDNAMES = ["id", "date", "customer_id", "sold_product", "product_id", "total_order_amount", "payment_type"]
 
@@ -31,9 +32,11 @@ class Order:
     def set_total_order_amonut(self):
         self.total_order_amount = self.sold_product["total_amount"]
 
+
     def get_order_details(self):
         return self.__dict__
     
+
 def get_orders():
     with open(PATH, "r") as file:
         reader = csv.DictReader(file)
